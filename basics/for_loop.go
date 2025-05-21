@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	simple iteration over range
+	//simple iteration over range
 	for i := 1; i <= 5; i++ {
 		fmt.Println(i)
 	}
@@ -25,22 +25,22 @@ func main() {
 	// 	}
 	// }
 
-	// ASTERISK LAYOUT
-	//rows := 5
+	//ASTERISK LAYOUT
+	rows := 5
 
-	// Outer loop
-	// for i := 1; i <= rows; i++ {
-	// 	// inner loop for spaces before stars
-	// 	for j := 1; j <= rows-i; j++ {
-	// 		fmt.Print(" ")
-	// 	}
-	// 	// inner loop for stars
-	// 	for k := 1; k <= 2*i-1; k++ {
-	// 		fmt.Print("*")
-	// 	}
-	// 	fmt.Println() // Move to the next line
+	//Outer loop
+	for i := 1; i <= rows; i++ {
+		// inner loop for spaces before stars
+		for j := 1; j <= rows-i; j++ {
+			fmt.Print(" ")
+		}
+		// inner loop for stars
+		for k := 1; k <= 2*i-1; k++ {
+			fmt.Print("*")
+		}
+		fmt.Println() // Move to the next line
 
-	// }
+	}
 
 	for i := range 10 {
 		fmt.Println(i)
